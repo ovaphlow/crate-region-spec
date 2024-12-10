@@ -1,0 +1,24 @@
+{
+	"imports": {
+		"hono": "jsr:@hono/hono@^4.6.13",
+		"xlsx": "npm:xlsx@^0.18.5"
+	},
+	"tasks": {
+		"start": "deno run --allow-net --allow-env --allow-read main.ts",
+		"format": "deno fmt",
+		"build": "deno compile --allow-net --allow-env --allow-read --output dist/crate-region-spec main.ts"
+	},
+	"compilerOptions": {
+		"jsx": "precompile",
+		"jsxImportSource": "hono/jsx"
+	},
+	"fmt": {
+		"useTabs": true,
+		"lineWidth": 120,
+		"indentWidth": 4,
+		"singleQuote": true,
+    "semiColons": false,
+		"proseWrap": "preserve",
+    "include": ["main.ts", "router/"]
+	}
+}
