@@ -17,8 +17,8 @@
 		"lineWidth": 120,
 		"indentWidth": 4,
 		"singleQuote": true,
-    "semiColons": false,
+		"semiColons": false,
 		"proseWrap": "preserve",
-    "include": ["main.ts", "router/"]
+		"include": ["main.ts", "router/"]
 	}
 }
