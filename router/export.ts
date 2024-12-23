@@ -8,7 +8,7 @@ export default app
 
 /**
  * Handles the export of data to an Excel file.
- * 
+ *
  * @param {Context} c - The context object containing the request and response.
  */
 async function exportExcel(c: Context) {
@@ -17,7 +17,7 @@ async function exportExcel(c: Context) {
 	const wb = XLSX.utils.book_new()
 	const ws = XLSX.utils.aoa_to_sheet([
 		columns,
-		...data
+		...data,
 	])
 	XLSX.utils.book_append_sheet(wb, ws, 'Sheet 1')
 
