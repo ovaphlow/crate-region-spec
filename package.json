@@ -1,0 +1,19 @@
+{
+  "name": "crate-api-region-spec",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.4.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "build": "bun build ./index.ts --compile --outfile target/crate-region-spec",
+    "format": "bunx prettier --write index.ts"
+  }
+}
