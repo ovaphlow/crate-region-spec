@@ -6,7 +6,6 @@ Bun.serve({
 	port: port,
 	fetch: async (req, server) => {
 		if (new URL(req.url).pathname === '/crate-api-region-spec/excel') {
-			// 添加 CORS 预检处理
 			if (req.method === 'OPTIONS') {
 				return new Response('', {
 					headers: {
