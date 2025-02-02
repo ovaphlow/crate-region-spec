@@ -50,4 +50,4 @@ Bun.serve({
 	},
 })
 
-console.info(`Server started at http://localhost:${port}`)
+console.info(`Server started at http://0.0.0.0:${port}`)
